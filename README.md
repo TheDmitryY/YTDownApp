@@ -2,7 +2,7 @@
 <h4 align="center">
   <a href="https://t.me/horekisun">Telegram</a>
   |
-  <a href="https://github.com/TheDmitryY/Admineg#-installation"">Installation</a>
+  <a href="https://github.com/TheDmitryY/YTDownApp#-installation"">Installation</a>
 </h4>
 
 <p align="center">
@@ -13,7 +13,7 @@ Youtube Downloader - is a application that help to download YouTube videos for f
 
 ## Preview📷
 
-![image](images/image1.png)
+![image](images/image1.jpg)
 
 ## ✨ Features
 
@@ -24,19 +24,23 @@ Youtube Downloader - is a application that help to download YouTube videos for f
 
 ## 🤖 Instalattion
 <h2> Windows </h2>
-```sh
-    git clone 
-    cd YtDownApp
-    ```
-    Open setup.bat
 
-<h2> Linux </h2>
-```sh
-    git clone
-    cd YtDownApp
-    chmod +x setup.sh
-    ./setup.sh
 ```
-Or 
+git clone https://github.com/TheDmitryY/YTDownApp
 
-install exe
+cd YTDownApp
+
+Open setup.bat 
+```
+<h2> Linux </h2>
+
+```
+git clone https://github.com/TheDmitryY/YTDownApp
+
+cd YTDownApp
+
+chmod +x setup.sh
+
+./setup.sh
+```
+
