@@ -66,7 +66,7 @@ class Ui_MainWindow(object):
         self.show_button_2 = QtWidgets.QPushButton(parent=self.tab)
         self.show_button_2.setGeometry(QtCore.QRect(320, 440, 121, 28))
         self.show_button_2.setObjectName("show_button_2")
-        self.show_button_2.clicked.connect(self.on_click)
+        self.show_button_2.clicked.connect(self.download_video)
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
@@ -124,6 +124,12 @@ class Ui_MainWindow(object):
             QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Close
         )
         coming.exec()
+
+    def download_video(self):
+        url = self.get_link.text()
+        video = YouTube(url)
+        downloader = video.streams.get_highest_resolution()
+        downloader.download()
 
 
 if __name__ == "__main__":
