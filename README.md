@@ -22,7 +22,7 @@ Youtube Downloader - is a application that help to download YouTube videos for f
 - Free application
 - More updates soon
 
-## 🤖 Instalattion
+## 🤖 Installation
 <h2> Windows </h2>
 
 ```
