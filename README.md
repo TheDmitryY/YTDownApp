@@ -13,8 +13,6 @@ Youtube Downloader - is a application that help to download YouTube videos for f
 
 ## Preview📷
 
-<video src="images/video.mp4">
-
 ![image](images/image1.png)
 
 ## ✨ Features
