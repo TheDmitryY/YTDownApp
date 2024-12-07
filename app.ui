@@ -119,6 +119,9 @@
        <property name="pixmap">
         <pixmap>C:/Users/manke/Pictures/Screenshots/Знімок екрана 2024-12-06 085802.png</pixmap>
        </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
       </widget>
      </widget>
      <widget class="QLabel" name="label_3">
