@@ -7,6 +7,7 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtWidgets import QFileDialog, QMessageBox
 
 from pytubefix import YouTube
 
@@ -57,12 +58,15 @@ class Ui_MainWindow(object):
         self.save_path = QtWidgets.QLineEdit(parent=self.tab)
         self.save_path.setGeometry(QtCore.QRect(60, 360, 501, 22))
         self.save_path.setObjectName("save_path")
+        self.save_path.setText("Comming Soon...")
         self.pushButton = QtWidgets.QPushButton(parent=self.tab)
         self.pushButton.setGeometry(QtCore.QRect(570, 360, 191, 28))
         self.pushButton.setObjectName("pushButton")
+        self.pushButton.clicked.connect(self.on_click)
         self.show_button_2 = QtWidgets.QPushButton(parent=self.tab)
         self.show_button_2.setGeometry(QtCore.QRect(320, 440, 121, 28))
         self.show_button_2.setObjectName("show_button_2")
+        self.show_button_2.clicked.connect(self.on_click)
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
@@ -112,7 +116,14 @@ class Ui_MainWindow(object):
         except Exception as e:
             print(f"Error downloading image: {e}")
             return None
-
+    def on_click(self):
+        coming = QMessageBox()
+        coming.setWindowTitle("Comming Soon... - by HorekiSun")
+        coming.setText("    Comming Soon...")
+        coming.setStandardButtons(
+            QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Close
+        )
+        coming.exec()
 
 
 if __name__ == "__main__":
